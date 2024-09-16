@@ -15,7 +15,7 @@ pipeline{
 
         stage('Run tests'){
             steps{
-                sh 'k6 run script.js --out json=test_results.json'
+                sh 'k6 run script.js -o xk6-influxdb'
             }
         }
     }
