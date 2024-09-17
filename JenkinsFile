@@ -15,7 +15,7 @@ pipeline{
 
         stage('Run tests'){
             steps{
-                sh 'k6 run --vus "$NMBRVUE" 1 --duration "$DURATION"s  "$NOMSCRIPT"'
+                sh 'k6 run --vus "$NMBRVUE"  --duration "$DURATION"s  "$NOMSCRIPT"'
             }
         }
     }
